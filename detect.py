@@ -149,7 +149,7 @@ def detect(save_img=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str, default='runs/train/exp/weights/best.pt', help='model.pt path(s)')
-    parser.add_argument('--source', type=str, default='C:VOCdevkit/images/train/IPC_2021-05-07.16.00.21.5320.jpg', help='source')  # file/folder, 0 for webcam
+    parser.add_argument('--source', type=str, default='kaggle/working/VOCdevkit/images//train/IPC_2021-05-07.16.00.21.5320.jpg', help='source')  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
     parser.add_argument('--iou-thres', type=float, default=0.45, help='IOU threshold for NMS')
